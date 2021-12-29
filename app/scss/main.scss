@@ -221,10 +221,9 @@
   padding-bottom: 150px;
 }
 .direction__items {
-  display: flex;
-  align-items: center;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  .slick-slide {
+    width: 25%;
+}
 
   .direction__item {
     position: relative;
@@ -312,6 +311,115 @@
     &::before {
       font-size: 12px;
       color: #fff;
+    }
+  }
+}
+/******************************************
+instagram-block
+*/
+.instagram-block {
+  padding-bottom: 100px;
+}
+.instagram-block__title {
+  margin-bottom: 100px;
+}
+.instagram-block__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.instagram-block__item {
+  width: 32.5%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 410px;
+  margin-bottom: 30px;
+}
+/***********************************
+footer
+*/
+.footer {
+  padding-bottom: 142px;
+  padding-top: 50px;
+}
+.footer__logo {
+  margin-bottom: 20px;
+}
+.footer__social-item {
+  font-size: 25px;
+  transition: all 0.4s;
+  & + .footer__social-item {
+    margin-left: 38px;
+  }
+  &:hover {
+    color: #f9ba50;
+  }
+}
+
+.footer__item-first {
+  max-width: 410px;
+}
+.footer__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 40px;
+}
+
+.footer__social {
+  margin-bottom: 40px;
+}
+.footer__politics {
+  font-size: 16px;
+  line-height: 150%;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__item-second {
+  max-width: 180px;
+}
+.footer__item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 63px;
+}
+.footer__menu-item {
+  & + .footer__menu-item {
+    margin-top: 30px;
+  }
+  a {
+    font-size: 18px;
+    line-height: 120%;
+    transition: all 0.4s;
+  }
+  &:hover {
+    color: #f9ba50;
+  }
+}
+.footer__item-third {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  max-width: 420px;
+  span {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #f9ba50;
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 30px;
+  }
+  .footer__addres-paragraph {
+    & + .footer__addres-paragraph {
+      margin-top: 36px;
     }
   }
 }
